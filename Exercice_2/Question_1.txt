@@ -1,0 +1,7 @@
+Je pense utiliser une liste chaînée simple pour implémenter la pile. Voici pourquoi :
+
+Flexibilité en taille : Avec une liste chaînée, la pile peut grandir et diminuer dynamiquement. La pile peut s'adapter à nos besoins, quelle que soit la taille des données que nous traitons.
+
+Efficacité des opérations : Ajouter (push) et retirer (pop) des éléments en haut de la pile peut se faire en temps constant(toujour le même temps peu importe le nb d'élement). 
+
+Simplicité d'implémentation : Les opérations de base d'une pile, comme push, pop et peek (regarder l'élément en haut sans le retirer), peuvent être appliquer simplement avec une liste chaînée.
