@@ -21,3 +21,13 @@ typedef struct TrainHoraireListe {
 //La structure TrainHoraireListe permet de gérer une liste d'horaires grace a une liste chaînée, offrant une liberté
 //dans l'ajout et la suppression des horaires sans contraintes de taille prédéfinie, et permettant ainsi des modifications dynamiques.
 
+void ajouterHoraire(TrainHoraireListe* liste, char* villeDepart, char* villeArrivee, char* heureDepart, char* heureArrivee, int distance) {
+    HoraireTrain* nouveau = (HoraireTrain*)malloc(sizeof(HoraireTrain));
+    nouveau->villeDepart = strdup(villeDepart);    //dupli des chaînes pour éviter les modifications extérieures.
+    nouveau->villeArrivee = strdup(villeArrivee);
+    nouveau->heureDepart = strdup(heureDepart);
+    nouveau->heureArrivee = strdup(heureArrivee);
+    nouveau->distance = distance;
+    nouveau->suivant = liste->head;
+    liste->head = nouveau;
+}
