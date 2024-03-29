@@ -21,6 +21,11 @@ typedef struct TrainHoraireListe {
     HoraireTrain* head;  
 } TrainHoraireListe;
 
+//Pourquoi ce choix :
+//La structure TrainHoraireListe permet de gérer une liste d'horaires grace a une liste chaînée, offrant une liberté
+//dans l'ajout et la suppression des horaires sans contraintes de taille prédéfinie, et permettant ainsi des modifications dynamiques.
+
+
 // Déclaration des fonctions
 void ajouterHoraire(TrainHoraireListe* liste, char* villeDepart, char* villeArrivee, char* heureDepart, char* heureArrivee, int distance);
 void afficherTrainsDepart(TrainHoraireListe* liste, char* villeDepart);

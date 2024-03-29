@@ -19,9 +19,9 @@ void push(StackNode** top, int data) {
         printf("Erreur d'allocation mémoire\n");
         return;
     }
-    newNode->data = data;      // Assigner la donnée au nouveau nœud
-    newNode->next = *top;      // Mettre l'ancien sommet de la pile comme suivant du nouveau nœud
-    *top = newNode;            // Mettre à jour le sommet de la pile avec le nouveau nœud
+    newNode->data = data;      // Assigner la donnée au nouveau noeud
+    newNode->next = *top;      // Mettre l'ancien sommet de la pile comme suivant du nouveau noeud
+    *top = newNode;            // Mettre à jour le sommet de la pile avec le nouveau noeud
 }
 
 // Fonction pour récupérer la valeur du sommet de la pile sans le retirer
